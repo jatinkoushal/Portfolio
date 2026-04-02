@@ -148,3 +148,22 @@ body {
 .imgs:hover .icon {
   opacity: 1;
 }
+.project-img{
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.project-img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.cert:hover .arrow{
+    transform: translatey(-5px) translatex(5px);
+    transition-duration: 0.3s;
+    color:var(--color-muted-foreground)
+}
+.cert .arrow{
+    color:black;
+}
+.certificate-box:hover .icon{
+    opacity:1;
+}
