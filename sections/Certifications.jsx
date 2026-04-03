@@ -3,7 +3,7 @@ import { Certification } from '../src'
 
 const Certifications = () => {
   return (
-    <div className='pt-60 md:pt-10 bg-[rgb(15,20,24)] h-[190vh]' id='certifications' >
+    <div className='pt-10 md:pt-10 bg-[rgb(15,20,24)] h-[190vh]' id='certifications' >
       <h1 className='text-center mb-8 font-bold text-primary-foreground text-3xl' >Certifications</h1>
       <div className='flex flex-col gap-20'>
       {
