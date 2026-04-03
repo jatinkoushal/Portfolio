@@ -27,7 +27,7 @@ const ProjectCard = () => {
           <p className='text-sm text-muted-foreground mt-4' >{project.description}</p>
           <div className='flex gap-3' >
             {project.skills.map((skill, index) => (
-              <button key={index} className='project-skill' >{skill}</button>
+              <button key={index} className='min-w-25 w-auto project-skill' >{skill}</button>
             ))}
           </div>
         </div>

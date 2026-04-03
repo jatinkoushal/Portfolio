@@ -5,6 +5,7 @@ import Projects from "../sections/Projects"
 import Certifications from "../sections/Certifications"
 import Contact from "../sections/Contact"
 import Technologies from "../sections/Technologies"
+import Footer from "../layout/Footer"
 const App = () => {
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -16,6 +17,7 @@ const App = () => {
         <Projects/>
         <Certifications/>
         <Contact/> 
+        <Footer/>
       </main>
     </div>
   )
