@@ -4,8 +4,8 @@ import { Download, FolderGitIcon, GitForkIcon, MoveLeftIcon, MoveRight } from 'l
 
 const Hero = () => {
   return (
-    <section className='relative min-h-screen flex items-center overflow-hidden px-8 py-28 pb-12' >
-      <div className='absolute inset-0' >
+    <section className='relative min-h-screen flex items-center overflow-hidden px-8 md:py-28 pb-0 md:pb-12' >
+      <div className='absolute inset-0 ' >
         <img src="/hero-bg.jpg" alt="Hero image" className='w-full object-cover h-full opacity-50  opacity-20 block [mask-image:linear-gradient(to_bottom,black_30%,transparent_80%)] ' />
         <div className='absolute inset-0 bg-gradient-to-b 
 from-[rgba(15,20,24,0.2)] 
@@ -38,20 +38,20 @@ to-[rgb(15,20,24)]' ></div>
         </div>} */}
       </div>
       <div className='relative z-10 text-center px-4' >
-        <div className='w-[50%] ' >
-          <h1 className='text-6xl md:text-7xl font-bold text-white leading-tight text-left' >
+        <div className='md:w-[50%] w-screen ' >
+          <h1 className='text-5xl md:text-7xl font-bold text-white leading-tight text-left' >
             Crafting <span className='text-primary [text-shadow:0px_0px_30px_theme(colors.primary)]' >digital </span> 
              experiences with
            <i className='font-serif font-thin italic '> precision.</i>
           </h1>
           <p className='py-8 text-left leading-7 w-[80%] font-[500] text-muted-foreground text-[1.13rem]' >Hi, I'm Jatin — a Frontend Developer crafting high-performance web experiences. I bridge the gap between complex logic in C++ and fluid, interactive interfaces using React and GSAP.</p>
         </div>
-        <div className='flex justify-start items-center gap-4 '>
-        <a href='/#contact' ><Button size="lg" className='mt-3' >
+        <div className='flex md:flex-row flex-col justify-start md:items-center gap-4'>
+        <a href='/#contact' className='flex' ><Button size="lg" className=' mt-3 w-120 md:w-auto' >
           Contact Me <MoveRight/>
         </Button></a>
         <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank'>
-        <button className='flex w-50 h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color' >
+        <button className='flex md:w-50 h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color w-120' >
           Download Resume <Download className='ml-2' />
         </button>
         </a>
