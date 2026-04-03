@@ -4,7 +4,7 @@ import { Download, FolderGitIcon, GitForkIcon, MoveLeftIcon, MoveRight } from 'l
 
 const Hero = () => {
   return (
-    <section className='relative min-h-screen flex items-center overflow-hidden px-1 md:px-8 md:py-28 pb-0 pt-20 md:pb-12' >
+    <section className='relative min-h-screen flex items-center overflow-hidden px-1 md:px-8 md:py-28 pb-0 pt-0 md:pb-12' >
       <div className='absolute inset-0 ' >
         <img src="/hero-bg.jpg" alt="Hero image" className='w-full object-cover h-full opacity-50  opacity-20 block [mask-image:linear-gradient(to_bottom,black_30%,transparent_80%)] ' />
         <div className='absolute inset-0 bg-gradient-to-b 
