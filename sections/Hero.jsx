@@ -50,9 +50,11 @@ to-[rgb(15,20,24)]' ></div>
         <a href='/#contact' ><Button size="lg" className='mt-3' >
           Contact Me <MoveRight/>
         </Button></a>
+        <a href="https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto" target='_blank'>
         <button className='flex w-50 h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color' >
           Download Resume <Download className='ml-2' />
         </button>
+        </a>
         </div>
         <div className='flex items-center mt-10 gap-5 text-muted-foreground' >
           <p>Follow me:</p> 
