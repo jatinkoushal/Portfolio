@@ -50,7 +50,7 @@ to-[rgb(15,20,24)]' ></div>
         <a href='/#contact' ><Button size="lg" className='mt-3' >
           Contact Me <MoveRight/>
         </Button></a>
-        <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view" target='_blank'>
+        <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank'>
         <button className='flex w-50 h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color' >
           Download Resume <Download className='ml-2' />
         </button>
