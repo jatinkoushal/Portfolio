@@ -4,13 +4,13 @@ import Project_Details from '..';
 
 const ProjectCard = () => {
   return (
-    <div className='md:flex gap-20 p-16 md:pb-16 pb-0 pt-0 justify-center' >
+    <div className='md:flex gap-20 p-4 md:p-16 md:pb-16 pb-0 pt-0 justify-center' >
       {
         Project_Details.map((project,index) => (
            <div key={index} className='bg-[rgb(20,28,33)] rounded md:w-[40%] h-120 mb-8 md:mb-0 md:h-130 border border-bg-color overflow-hidden imgs' >
         <img src={project.image} className='rounded-tr rounded-tl object-cover transition-transform duration-[1000ms] hover:scale-110' alt="GSAP Project" />
-        <div className='border-1px h-60 md:h-52 relative z-1 project-card bg-[rgb(20,28,33)] p-6 py-0'>
-        <div className=' gap-8 relative z-2 bottom-40 left-40 inline-flex ' >
+        <div className='border-1px h-60 md:h-52 relative z-1 project-card bg-[rgb(20,28,33)] p-4 py-0'>
+        <div className=' gap-8 relative z-2 bottom-40 left-40 inline-flex' >
           <a href={project.githubLink} target='_blank' rel='noopener noreferrer'>
         <FiGithub size={30} className='icon' />
         </a>

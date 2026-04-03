@@ -56,7 +56,7 @@ to-[rgb(15,20,24)]' ></div>
         </button>
         </a>
         </div>
-        <div className='flex items-center mt-10 md:mb-0 mb-10 gap-5 text-muted-foreground' >
+        <div className='flex items-center mt-10 gap-5 text-muted-foreground' >
           <p>Follow me:</p> 
           <a href="https://github.com/jatinkoushal" target='_blank'>
         <img src="/Github.png" alt="git hub" className='ml-2 cursor-pointer' /></a>
