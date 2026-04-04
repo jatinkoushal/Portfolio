@@ -12,10 +12,10 @@ const ProjectCard = () => {
         <div className='border-1px h-60 md:h-52 relative z-1 project-card bg-[rgb(20,28,33)] p-4 py-0'>
         <div className=' gap-8 relative z-2 md:bottom-40 bottom-34 left-30  md:left-40 inline-flex' >
           <a href={project.githubLink} target='_blank' rel='noopener noreferrer'>
-        <FiGithub size={30} className='icon md:block hidden' />
+        <FiGithub size={30} className='icon' />
         </a>
         <a href={project.liveDemoLink} target='_blank' rel='noopener noreferrer'>
-        <ArrowUpRight size={30} className='icon md:block hidden' />
+        <ArrowUpRight size={30} className='icon' />
         </a>
         </div>
           <div className='flex justify-between' >
