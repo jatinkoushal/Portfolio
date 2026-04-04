@@ -17,7 +17,7 @@ const Project_Details = [
 }];
 
 export const Certification=[
-    {logo:"/Tcslogo.avif",
+    {logo:"/Tcslogo.png",
         heading:"Cybersecurity Analyst Job Simulation",
         ul:[
             "IAM Fundamentals — Learned core concepts of Identity and Access Management, including user provisioning, roles, and permission models",
