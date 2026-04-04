@@ -48,30 +48,30 @@ const Contact = () => {
     }
   }
   return (
-    <div className='bg-[rgb(15,20,24)] h-[140vh] px-18 pt-10' id='contact'>
+    <div className='bg-[rgb(15,20,24)] h-[185vh] md:h-[140vh] md:px-18 pt-10' id='contact'>
       <div>
-        <h1 className='font-bold text-5xl text-center text-primary' >Let’s Connect</h1>
-        <div className='text-4xl mt-4 text-center ' ><h1 className='font-bold inline text-primary' >Driven by curiosity,</h1><span className='font-serif italic font-thin ' > powered by code.</span></div>
+        <h1 className='font-bold md:text-5xl text-4xl text-center text-primary' >Let’s Connect</h1>
+        <div className='md:text-4xl md:mt-4 mt-2 text-center ' ><h1 className='font-bold inline text-primary ' >Driven by curiosity,</h1><span className='font-serif italic font-thin ' > powered by code.</span></div>
 
-        <p className='text-muted-foreground text-sm px-50 text-center mt-4' >Dedicated student developer turning academic foundations into real-world solutions.
+        <p className='text-muted-foreground text-sm px-4 md:px-50 text-center mt-4' >Dedicated student developer turning academic foundations into real-world solutions.
           Open to new roles, collaborations, or a quick chat about my latest projects.</p>
       </div>
 
-      <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto mt-18 h-[90vh]' >
-        <div className='h-135 w-120 bg-[rgb(21,31,36)] rounded p-8 border-[rgb(25,75,74)] border' >
+      <div className='md:grid md:grid-cols-2 gap-12 max-w-5xl mx-auto md:mt-18 mt-10 h-[90vh]' >
+        <div className='md:h-135 md:w-120 bg-[rgb(21,31,36)] rounded p-8 md:m-0 m-4 border-[rgb(25,75,74)] border' >
           <form action="post" className='outline-none' onSubmit={handleform} >
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name='Name' placeholder='Your name...' className='bg-[rgb(26,35,41)] p-3 w-104 outline-none focus:ring-primary focus:ring-1 rounded mb-5 border-muted border' 
+            <input type="text" id="name" name='Name' placeholder='Your name...' className='bg-[rgb(26,35,41)] p-3 flex w-full  outline-none focus:ring-primary focus:ring-1 rounded mb-5 border-muted border' 
             value={formData.name}
             onChange={(e)=>setFormData({...formData,name:e.target.value})} required />
             <label htmlFor="email">Email</label>
             <input value={formData.email}
             onChange={(e)=>setFormData({...formData,email:e.target.value})}
-            type="text" id="enmail" name='Email' placeholder='your@email.com' className='w-104 bg-[rgb(26,35,41)] p-3 rounded mb-5 outline-none focus:ring-primary focus:ring-1 border-muted border' required />
+            type="text" id="enmail" name='Email' placeholder='your@email.com' className='flex w-full bg-[rgb(26,35,41)] p-3 rounded mb-5 outline-none focus:ring-primary focus:ring-1 border-muted border' required />
             <label htmlFor="message">Message</label>
             <textarea name="Message" id="message" value={formData.message}
-            onChange={(e)=>setFormData({...formData,message:e.target.value})} placeholder='Your message...' className='w-104 h-40 bg-[rgb(26,35,41)] p-3 rounded resize-none outline-none focus:ring-primary focus:ring-1 border-muted border' required ></textarea>
-            <button type="submit" className='w-104 h-15 mt-3 relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25' disabled={isLoading} >
+            onChange={(e)=>setFormData({...formData,message:e.target.value})} placeholder='Your message...' className='flex w-full h-40 bg-[rgb(26,35,41)] p-3 rounded resize-none outline-none focus:ring-primary focus:ring-1 border-muted border' required ></textarea>
+            <button type="submit" className='flex w-full justify-center h-15 mt-3 overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25' disabled={isLoading} >
               <span className="relative flex items-center justify-center gap-2">
                 {isLoading?(
                   <>
@@ -103,7 +103,7 @@ const Contact = () => {
             }
           </form>
         </div>
-        <div className='bg-[rgb(21,31,36)] h-93 w-115 rounded border-muted border p-4' >
+        <div className='bg-[rgb(21,31,36)] h-93 md:w-115 md:m-0 m-4 rounded border-muted border p-4' >
           <div className='font-bold p-4 px-8 text-xl' >
             <h1>Contact Information</h1>
           </div>
@@ -131,7 +131,7 @@ const Contact = () => {
           </div>
           </div>
         </div>
-          <div className= 'rounded border-muted/60 border bg-[rgb(21,31,36)] p-6 relative bottom-50 left-134 w-115'>
+          <div className= 'rounded border-muted/60 border bg-[rgb(21,31,36)] p-6 md:relative bottom-50 left-134 md:w-115 md:m-0 m-4'>
             <span className='font-bold'>Currently Available</span>
             <p className='text-sm text-muted-foreground mt-3' >I'm currently open to new opportunities and exciting projects. Whether you need a full-time engineer or a freelance consultant, let's talk!</p>
           </div>
