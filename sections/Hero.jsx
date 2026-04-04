@@ -46,12 +46,12 @@ to-[rgb(15,20,24)]' ></div>
           </h1>
           <p className='py-8 text-left leading-7 md:w-[80%] font-[500] text-muted-foreground text-[1.13rem]' >Hi, I'm Jatin — a Frontend Developer crafting high-performance web experiences. I bridge the gap between complex logic in C++ and fluid, interactive interfaces using React and GSAP.</p>
         </div>
-        <div className='flex md:flex-row flex-col justify-start md:items-center gap-4'>
-        <a href='/#contact' className='flex' ><Button size="lg" className=' mt-3 w-98 md:w-auto' >
+        <div className='flex w-[92%] md:flex-row flex-col justify-start md:items-center gap-4'>
+        <a href='/#contact' className='flex' ><Button size="lg" className=' mt-3 md:w-auto flex w-full justify-center' >
           Contact Me <MoveRight/>
         </Button></a>
-        <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank'>
-        <button className='flex md:w-50 h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color w-98' >
+        <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank' >
+        <button className='flex md:w-50 w-full h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color mx-0' >
           Download Resume <Download className='ml-2' />
         </button>
         </a>

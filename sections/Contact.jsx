@@ -48,7 +48,7 @@ const Contact = () => {
     }
   }
   return (
-    <div className='bg-[rgb(15,20,24)] h-[185vh] md:h-[140vh] md:px-18 pt-10' id='contact'>
+    <div className='bg-[rgb(15,20,24)] h-[180vh] md:h-[140vh] md:px-18 pt-10' id='contact'>
       <div>
         <h1 className='font-bold md:text-5xl text-4xl text-center text-primary' >Let’s Connect</h1>
         <div className='md:text-4xl md:mt-4 mt-2 text-center ' ><h1 className='font-bold inline text-primary ' >Driven by curiosity,</h1><span className='font-serif italic font-thin ' > powered by code.</span></div>
