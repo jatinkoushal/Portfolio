@@ -14,7 +14,7 @@ const Projects = () => {
       <ProjectCard />
     </div>
     <div className='flex justify-center' >
-      <a href="#viewallprojects">
+      <a href="https://github.com/jatinkoushal?tab=repositories" target='_blank'>
       <button className='flex w-100 md:w-55 h-15 rounded-full border-none mt-3 items-center justify-center btn-color text-lg font-bold' >
           View All Projects <ArrowUpRight size={20} className='ml-1' />
       </button>
