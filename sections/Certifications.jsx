@@ -26,7 +26,7 @@ const Certifications = () => {
       <ArrowUpRight size={30} className='md:block hidden relative bottom-50 left-190 z-1 icon' />
       </a>
       </div>
-      <div className='bg-gray-200 h-12 border-muted-foreground border-t rounded-br rounded-bl overflow-y-hidden mt-3 md:h-0 flex items-end justify-end md:block md:border-none'>
+      <div className='bg-gray-200 h-12 border-muted-foreground border-t rounded-br rounded-bl mt-3 md:h-0 flex items-end justify-end md:block md:border-none'>
       <a href={item.Credential_link} target='_blank'>
       <h1 className='text-black md:relative left-150 bottom-25 font-bold md:text-3xl text-xl hover:text-gray-600 cursor-pointer inline-flex gap-3 cert'>Show Credential <ArrowUpRight className='arrow' size={35} /> </h1>
       </a>

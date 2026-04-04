@@ -21,8 +21,8 @@ const Hero = () => {
       btn(linkRef.current);
   },[])
   return (
-    <section className='relative min-h-screen flex items-center overflow-hidden px-1 md:px-8 md:py-28 pb-0 pt-0 md:pb-12' >
-      <div className='absolute inset-0 ' >
+    <section className='relative min-h-screen flex items-center px-1 md:px-8 md:py-28 pb-0 pt-0 md:pb-12' >
+      <div className='absolute inset-0 hero' >
         <img src="/hero-bg.jpg" alt="Hero image" className='w-full object-cover h-full opacity-50  opacity-20 block [mask-image:linear-gradient(to_bottom,black_30%,transparent_80%)] ' />
         <div className='absolute inset-0 bg-gradient-to-b 
 from-[rgba(15,20,24,0.2)] 
