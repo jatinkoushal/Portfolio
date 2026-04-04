@@ -4,7 +4,7 @@ import ProjectCard from '../src/components/ProjectCard'
 const Projects = () => {
 
   return (
-    <div className='bg-[rgb(15,20,24)] h-[160vh]' >
+    <div className='bg-[rgb(15,20,24)] h-[160vh] overflow-y-hidden' >
       <div className='flex flex-col md:items-center md:p-18 p-4  md:ml-50 md:w-[70%] md:pt-20 pt-10' id='projects'>
       <p className='text-primary text-sm mb-4' >FEATURED WORK</p>
       <h1 className='md:text-5xl text-3xl mb-5' ><span className="text-primary font-bold" >Projects that</span><span className='font-serif italic ' > make an impact.</span></h1>
