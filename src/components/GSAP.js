@@ -162,3 +162,29 @@ export const viewbtn=(ele,parent)=>{
         ease:'bounce.inOut'
     })
 }
+export const lcertificate=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'.certificates',
+            start:'-10%',
+            end:'9%',
+            scrub:true,
+        },
+        x:-200,
+        opacity:0,
+        ease:'power1.in'
+    })
+}
+export const rcertificate=(ele)=>{
+ gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'.certificates',
+            start:'9%',
+            end:'50%',
+            scrub:true,
+        },
+        x:200,
+        opacity:0,
+        ease:'power1.in'
+    })   
+}

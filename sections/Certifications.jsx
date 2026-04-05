@@ -1,14 +1,25 @@
 import { ArrowUpRight } from 'lucide-react'
 import { Certification } from '../src'
+import { useEffect, useRef } from 'react'
+import { featureHeading, lcertificate, lproject, rcertificate, rproject } from '../src/components/GSAP';
 
 const Certifications = () => {
+  const cards=[lcertificate,rcertificate];
+  const headingRef=useRef();
+  const certificates=useRef([]);
+  useEffect(()=>{
+    certificates.current.forEach((ele,i)=>{
+      cards[i](ele);
+    })
+    featureHeading(headingRef.current,'.certificates');
+  })
   return (
-    <div className='pt-10 md:pt-10 p-4 md:p-auto bg-[rgb(15,20,24)] md:h-[190vh]' id='certifications' >
-      <h1 className='text-center mb-8 font-bold text-primary-foreground text-3xl' >Certifications</h1>
+    <div className='pt-10 md:pt-10 p-4 md:p-auto bg-[rgb(15,20,24)] md:h-[190vh] certificates' id='certifications'  >
+      <h1 className='text-center mb-8 font-bold text-primary-foreground text-3xl' ref={headingRef}>Certifications</h1>
       <div className='flex flex-col gap-20'>
       {
       Certification.map((item,index) => (
-      <div key={index} className='md:flex justify-center' >
+      <div key={index} ref={(e)=> certificates.current[index]=e} className='md:flex justify-center' >
       <div className='bg-white md:w-250 md:h-120 h-96 rounded certificate-box ' >
         <div className='flex md:block flex-row' >
       <img src={item.logo} alt="Logo" className='relative rounded md:h-50 h-15 md:m-0 m-2' />
