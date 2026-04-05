@@ -59,7 +59,7 @@ export const aboutMe=(ele,y)=>{
         scrollTrigger:{
             trigger:'.hero',
             start:'70%',
-            end:'80%',
+            end:'90%',
             scrub:true,
         },
         y,
@@ -80,5 +80,85 @@ export const cardsAnima=(ele,parent,x,y)=>{
         y,
         opacity:0,
         ease:'power1.inOut'
+    })
+}
+export const features=(ele,parent)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'-27%',
+            end:'-5%',
+            scrub:true,
+        },
+        y:-30,
+        opacity:0,
+        ease:'bounce'
+    })
+}
+export const featureHeading=(ele,parent)=>{
+        gsap.from(ele,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'-25%',
+            end:'-5%',
+            scrub:true,
+        },
+        y:20,
+        opacity:0,
+        ease:'power1.inOut'
+    })
+}
+export const featurepara=(ele,parent)=>{
+      const title=SplitText.create(ele,{type:'words'});
+      gsap.from(title.words,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'-10%',
+            end:'8%',
+            scrub:true,
+        },
+        x:200,
+        opacity:0,
+        stagger:0.06,
+        ease:'power1.in'
+      })
+}
+export const lproject=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'.projects',
+            start:'-10%',
+            end:'10%',
+            scrub:true,
+        },
+        x:-100,
+        opacity:0,
+        ease:'power1.in'
+    })
+}
+export const rproject=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'.projects',
+            start:'-10%',
+            end:'10%',
+            scrub:true,
+        },
+        x:100,
+        opacity:0,
+        ease:'power1.in'
+    })
+}
+export const viewbtn=(ele,parent)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'60%',
+            end:'70%',
+            scrub:true,
+        },
+        scale:0,
+        opacity:0,
+        ease:'bounce.inOut'
     })
 }

@@ -1,13 +1,22 @@
 import { ArrowUpRight } from 'lucide-react'
 import { FiGithub } from "react-icons/fi";
 import Project_Details from '..';
+import { useEffect, useRef } from 'react';
+import {lproject,rproject} from '../components/GSAP'
 
 const ProjectCard = () => {
+  const cardsRef=useRef([]);
+  const cardAnimations=[lproject,rproject];
+  useEffect(()=>{
+    cardsRef.current.forEach((cardEl, i) => {
+      cardAnimations[i](cardEl);
+    });
+  });
   return (
     <div className='md:flex gap-20 p-4 md:p-16 md:pb-16 pb-0 pt-0 justify-center' >
       {
         Project_Details.map((project,index) => (
-           <div key={index} className='bg-[rgb(20,28,33)] rounded md:w-[40%] h-120 mb-8 md:mb-0 md:h-130 border border-bg-color overflow-hidden imgs' >
+           <div key={index} ref={(e)=> cardsRef.current[index]=e} className='bg-[rgb(20,28,33)] rounded md:w-[40%] h-120 mb-8 md:mb-0 md:h-130 border border-bg-color overflow-hidden imgs' >
         <img src={project.image} className='rounded-tr rounded-tl object-cover transition-transform duration-[1000ms] hover:scale-110' alt="GSAP Project" />
         <div className='border-1px h-60 md:h-52 relative z-1 project-card bg-[rgb(20,28,33)] p-4 py-0'>
         <div className=' gap-8 relative z-2 md:bottom-40 bottom-34 left-30  md:left-40 inline-flex' >
