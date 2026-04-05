@@ -54,7 +54,7 @@ export const aboutHeading=(ele,secele)=>{
         ease:'power1.in'
     })
 }
-export const aboutMe=(ele)=>{
+export const aboutMe=(ele,y)=>{
     gsap.from(ele,{
         scrollTrigger:{
             trigger:'.hero',
@@ -62,7 +62,7 @@ export const aboutMe=(ele)=>{
             end:'80%',
             scrub:true,
         },
-        y:-300,
+        y,
         opacity:0,
         ease:'bounce'
     })

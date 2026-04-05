@@ -40,7 +40,7 @@ to-[rgb(15,20,24)]' ></div>
         </div>
         <div className='flex w-[92%] md:flex-row flex-col justify-start md:items-center gap-4'>
         <a href='/#contact' className='flex' >
-        <div ref={CbtnRef} ><Button size="lg" className=' mt-3 md:w-auto flex w-full justify-center' >
+        <div ref={CbtnRef} className='flex w-full' ><Button size="lg" className=' mt-3 md:w-auto flex w-full justify-center' >
           Contact Me <MoveRight/>
         </Button></div></a>
         <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank' >

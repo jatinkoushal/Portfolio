@@ -19,7 +19,7 @@ const About = () => {
     cardConfigs.forEach(({i,x,y})=>{
         cardsAnima(cardsRef.current[i],parent.current,x,y)
     })
-    aboutMe(charRef.current);
+    aboutMe(charRef.current,-100);
     aboutHeading(headingRef.current, paraRef.current);
   }, [])
 
