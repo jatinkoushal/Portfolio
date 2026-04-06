@@ -41,10 +41,10 @@ const About = () => {
   ];
 
   return (
-    <div className='px-4 md:px-16 bg-[rgb(15,20,24)] md:h-screen'  id='about'>
+    <div className='px-4 md:px-16 bg-[rgb(15,20,24)] md:h-screen overflow-hidden'  id='about'>
       <p className='text-sm text-primary pt-15' ref={charRef} >ABOUT ME</p>
       <div className='text-5xl md:w-[50%] mt-8 leading-tight text' ref={headingRef} ><h1 className='font-bold inline text-primary' ref={parentRef}>Building the future,</h1><span className='font-serif italic font-thin ' > one component at a time.</span></div>
-      <span className=' grid md:w-[45%] grid-row-2 grid-cols-2 gap-y-8 md:absolute right-10 gap-4 mt-4 md:mt-auto' >
+      <span className=' grid md:w-[45%] grid-row-2 grid-cols-2 gap-y-4 md:absolute right-10 gap-4 mt-4 md:mt-auto' >
         {cards.map((item, idx) => (
           <div key={idx} ref={(el)=> cardsRef.current[idx]=el }>
           <AboutCard title={CardData[idx].title} description={CardData[idx].description} value={item.component} />

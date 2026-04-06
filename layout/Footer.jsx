@@ -15,7 +15,7 @@ const Footer = () => {
     footerIcons(LinkdInRef.current);
   })
   return (
-    <footer className='h-33 bg-[rgb(15,20,24)]  '>
+    <footer className='h-33 bg-[rgb(15,20,24)] overflow-hidden '>
         <div className='border-t md:flex items-center pt-8 md:py-10 justify-center gap-50 border-muted-foreground/20  '>
         <div className='flex flex-col md:ml-0 ml-4 ' ref={headingRef} >
            <a href='#' className='text-xl font-bold tracking-tight hover:text-primary' >

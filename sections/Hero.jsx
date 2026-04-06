@@ -21,13 +21,10 @@ const Hero = () => {
       btn(linkRef.current);
   },[])
   return (
-    <section className='relative min-h-screen flex items-center px-1 md:px-8 md:py-28 pb-0 pt-0 md:pb-12' >
+    <section className='relative min-h-screen flex items-center px-1 md:px-8 md:py-28 pb-0 pt-0 md:pb-12 overflow-x-hidden' >
       <div className='absolute inset-0 hero' >
         <img src="/hero-bg.jpg" alt="Hero image" className='w-full object-cover h-full opacity-50  opacity-20 block [mask-image:linear-gradient(to_bottom,black_30%,transparent_80%)] ' />
-        <div className='absolute inset-0 bg-gradient-to-b 
-from-[rgba(15,20,24,0.2)] 
-via-[rgba(15,20,24,0.8)] 
-to-[rgb(15,20,24)]' ></div>
+        <div className='absolute inset-0 bg-gradient-to-b from-[rgba(15,20,24,0.2)] via-[rgba(15,20,24,0.8)] to-[rgb(15,20,24)]' ></div>
       </div>
       <div className='relative z-10 text-center px-4' >
         <div className='md:w-[50%] w-screen ' >

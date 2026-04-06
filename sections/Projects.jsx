@@ -16,7 +16,7 @@ const Projects = () => {
     features(featureRef.current,parentRef.current)
   })
   return (
-    <div className='bg-[rgb(15,20,24)] h-[160vh] projects' ref={parentRef} >
+    <div className='bg-[rgb(15,20,24)] h-[160vh] projects overflow-hidden' ref={parentRef} >
       <div className='flex flex-col md:items-center md:p-18 p-4  md:ml-50 md:w-[70%] md:pt-20 pt-10' id='projects'>
       <p className='text-primary text-sm mb-4' ref={featureRef} >FEATURED WORK</p>
       <div ref={HeadingRef}>

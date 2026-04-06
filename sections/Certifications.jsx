@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 import { Certification } from '../src'
 import { useEffect, useRef } from 'react'
-import { featureHeading, lcertificate, lproject, rcertificate, rproject } from '../src/components/GSAP';
+import { featureHeading, lcertificate, rcertificate, } from '../src/components/GSAP';
 
 const Certifications = () => {
   const cards=[lcertificate,rcertificate];
@@ -14,7 +14,7 @@ const Certifications = () => {
     featureHeading(headingRef.current,'.certificates');
   })
   return (
-    <div className='pt-10 md:pt-10 p-4 md:p-auto bg-[rgb(15,20,24)] md:h-[190vh] certificates' id='certifications'  >
+    <div className='pt-10 md:pt-10 p-4 md:p-auto bg-[rgb(15,20,24)] md:h-[190vh] certificates overflow-hidden' id='certifications'  >
       <h1 className='text-center mb-8 font-bold text-primary-foreground text-3xl' ref={headingRef}>Certifications</h1>
       <div className='flex flex-col gap-20'>
       {

@@ -11,8 +11,8 @@ const navLinks=[
 const Navbar = () => {
   const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
   return (
-    <header className='fixed right-0 top-0 left-0 bg-[#00000050] w-screen py-4 z-99 backdrop-blur-[6px]' >
-        <nav className='container mx-auto px-6 flex items-center justify-between'>
+    <header className='fixed right-0 top-0 left-0 bg-[#00000050] w-screen py-4 z-99 backdrop-blur-[6px] overflow-hidden' >
+        <nav className='container mx-auto px-6 flex items-center justify-between overflow-hidden'>
           <a href='#' className='text-xl font-bold tracking-tight hover:text-primary' >
             JK<span className='text-primary' >.</span>
           </a>
