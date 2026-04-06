@@ -1,7 +1,24 @@
 import { SendIcon,CheckCircle,AlertCircle, Mail, Phone, MapPin } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { contactDesc, contactheading, contactTitle, lcertificate, rcertificate } from '../src/components/GSAP';
 const Contact = () => {
+  const parentRef=useRef();
+  const headingRef=useRef();
+  const titleRef=useRef();
+  const descRef=useRef();
+  const lformRef=useRef();
+  const rformRef=useRef();
+  const availRef=useRef();
+  useEffect(()=>{
+    contactheading(headingRef.current,parentRef.current);
+    contactTitle(titleRef.current,parentRef.current);
+    contactDesc(descRef.current,parentRef.current);
+    lcertificate(lformRef.current,parentRef.current,'-11%','9%');
+    rcertificate(rformRef.current,parentRef.current,'-11%','9%');
+    rcertificate(availRef.current,parentRef.current,'10%','30%');
+  })
+
   const [formData,setFormData]=useState({
     name:"",
     email:"",
@@ -48,17 +65,18 @@ const Contact = () => {
     }
   }
   return (
-    <div className='bg-[rgb(15,20,24)] h-[170vh] md:h-[140vh] md:px-18  pt-10' id='contact'>
-      <div>
-        <h1 className='font-bold md:text-5xl text-4xl text-center text-primary' >Let’s Connect</h1>
-        <div className='md:text-4xl md:mt-4 mt-2 text-center ' ><h1 className='font-bold inline text-primary ' >Driven by curiosity,</h1><span className='font-serif italic font-thin ' > powered by code.</span></div>
-
+    <div className='bg-[rgb(15,20,24)] h-[170vh] md:h-[140vh] md:px-18  pt-10' id='contact' ref={parentRef}>
+      <div  >
+        <h1 className='font-bold md:text-5xl text-4xl text-center text-primary' ref={headingRef} >Let’s Connect</h1>
+        <div className='md:text-4xl md:mt-4 mt-2 text-center ' ref={titleRef} ><h1 className='font-bold inline text-primary ' >Driven by curiosity,</h1><span className='font-serif italic font-thin ' > powered by code.</span></div>
+        <div ref={descRef}>
         <p className='text-muted-foreground text-sm px-4 md:px-50 text-center mt-4' >Dedicated student developer turning academic foundations into real-world solutions.
           Open to new roles, collaborations, or a quick chat about my latest projects.</p>
       </div>
+      </div>
 
       <div className='md:grid md:grid-cols-2 gap-12 max-w-5xl mx-auto md:mt-18 mt-10 h-[90vh]' >
-        <div className='md:h-135 md:w-120 bg-[rgb(21,31,36)] rounded p-8 md:m-0 m-4 border-[rgb(25,75,74)] border' >
+        <div className='md:h-135 md:w-120 bg-[rgb(21,31,36)] rounded p-8 md:m-0 m-4 border-[rgb(25,75,74)] border' ref={lformRef} >
           <form action="post" className='outline-none' onSubmit={handleform} >
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name='Name' placeholder='Your name...' className='bg-[rgb(26,35,41)] p-3 flex w-full  outline-none focus:ring-primary focus:ring-1 rounded mb-5 border-muted border' 
@@ -103,7 +121,7 @@ const Contact = () => {
             }
           </form>
         </div>
-        <div className='bg-[rgb(21,31,36)] h-93 md:w-115 md:m-0 m-4 rounded border-muted border p-4' >
+        <div className='bg-[rgb(21,31,36)] h-93 md:w-115 md:m-0 m-4 rounded border-muted border p-4' ref={rformRef}>
           <div className='font-bold p-4 px-8 text-xl' >
             <h1>Contact Information</h1>
           </div>
@@ -131,7 +149,7 @@ const Contact = () => {
           </div>
           </div>
         </div>
-          <div className= 'rounded border-muted/60 border bg-[rgb(21,31,36)] p-6 md:relative bottom-50 left-134 md:w-115 md:m-0 m-4'>
+          <div className= 'rounded border-muted/60 border bg-[rgb(21,31,36)] p-6 md:relative bottom-50 left-134 md:w-115 md:m-0 m-4' ref={availRef}>
             <span className='font-bold'>Currently Available</span>
             <p className='text-sm text-muted-foreground mt-3' >I'm currently open to new opportunities and exciting projects. Whether you need a full-time engineer or a freelance consultant, let's talk!</p>
           </div>

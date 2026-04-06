@@ -162,12 +162,12 @@ export const viewbtn=(ele,parent)=>{
         ease:'bounce.inOut'
     })
 }
-export const lcertificate=(ele)=>{
+export const lcertificate=(ele,parent='.certificates',start='-10%',end='9%')=>{
     gsap.from(ele,{
         scrollTrigger:{
-            trigger:'.certificates',
-            start:'-10%',
-            end:'9%',
+            trigger:parent,
+            start,
+            end,
             scrub:true,
         },
         x:-200,
@@ -175,16 +175,96 @@ export const lcertificate=(ele)=>{
         ease:'power1.in'
     })
 }
-export const rcertificate=(ele)=>{
+export const rcertificate=(ele,parent='.certificates',start='9%',end='50%')=>{
  gsap.from(ele,{
         scrollTrigger:{
-            trigger:'.certificates',
-            start:'9%',
-            end:'50%',
+            trigger:parent,
+            start,
+            end,
             scrub:true,
         },
         x:200,
         opacity:0,
         ease:'power1.in'
     })   
+}
+export const contactheading=(ele,parent)=>{
+      gsap.from(ele,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'-50%',
+            end:'-30%',
+            scrub:true,
+        },
+        x:100,
+        opacity:0,
+        ease:'power1.inOut'
+    })
+}
+export const contactTitle=(ele,parent)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:parent,
+            start:'-45%',
+            end:'-25%',
+            scrub:true,
+        },
+        x:-100,
+        opacity:0,
+        ease:'back.inOut',
+    })
+}
+export const contactDesc=(ele,parent)=>{
+    const desc=SplitText.create(ele,{type:'lines'});
+    gsap.from(desc.lines,{
+         scrollTrigger:{
+            trigger:parent,
+            start:'-25%',
+            end:'-15%',
+            scrub:true,
+        },
+        stagger:0.8,
+        y:30,
+        opacity:0,
+        ease:'power1.inOut',
+    })
+}
+export const footerHeader=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'#contact',
+            start:'38%',
+            end:'43%',
+            scrub:true,
+        },
+        x:-70,
+        opacity:0,
+        ease:'power1.inOut',
+    })
+}
+export const footerNav=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'#contact',
+            start:'39%',
+            end:'44%',
+            scrub:true,
+        },
+        y:10,
+        opacity:0,
+        ease:'power1.inOut',
+    })
+}
+export const footerIcons=(ele)=>{
+    gsap.from(ele,{
+        scrollTrigger:{
+            trigger:'#contact',
+            start:'39%',
+            end:'44%',
+            scrub:true,
+        },
+        scale:0,
+        opacity:0,
+        ease:'power1.inOut',
+    })
 }
