@@ -15,7 +15,7 @@ const Technologies = () => {
         ))}
         </div>
         </div>
-        <p className='text-muted-foreground/50 text-sm flex items-center justify-center flex-col'>SCROLL <span><ChevronsDown className='animate-bounce mt-2'/></span> </p>
+        <p className='text-muted-foreground text-sm flex items-center justify-center flex-col'>SCROLL <span><ChevronsDown className='animate-bounce mt-2'/></span> </p>
     </section>
   )
 }
