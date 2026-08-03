@@ -36,10 +36,15 @@ const Hero = () => {
           <p className='py-8 text-left leading-7 md:w-[80%] font-[500] text-muted-foreground text-[1.13rem]' ref={descRef} >Hi, I'm Jatin — a Frontend Developer crafting high-performance web experiences. I bridge the gap between complex logic in C++ and fluid, interactive interfaces using React and GSAP.</p>
         </div>
         <div className='flex w-[92%] md:flex-row flex-col justify-start md:items-center gap-4'>
-        <a href='/#contact' className='flex' >
-        <div ref={CbtnRef} className='flex w-full' ><Button size="lg" className=' mt-3 md:w-auto flex w-full justify-center' >
-          Contact Me <MoveRight/>
-        </Button></div></a>
+        <a href='/#contact' className='flex min-h-12' >
+<div ref={CbtnRef} className='flex w-full' ><Button size="lg" className=' mt-3 md:w-auto flex w-full justify-center' >
+  Contact Me <MoveRight/>
+</Button></div></a>
+<a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank' className='flex min-h-12' >
+<div ref={DbtnRef} className='flex w-full' ><button className='flex md:w-50 w-full h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color mx-0'  >
+  Download Resume <Download className='ml-2' />
+</button></div>
+</a>
         <a href="https://drive.google.com/file/d/1Wt-7325-Inm4EyiEnXv1Ckyj-MrOFLLp/view?usp=sharing" target='_blank' >
         <div ref={DbtnRef}><button className='flex md:w-50 w-full h-15 rounded-full border-none mt-3 bg-surface  items-center justify-center btn-color mx-0'  >
           Download Resume <Download className='ml-2' />
