@@ -14,7 +14,7 @@ tl.from(ele,{
 })
 }
 export const desc=(ele,duration=0.5)=>{
-    const desc=SplitText.create(ele,{type:'lines'});
+    const desc=SplitText.create(ele,{type:'lines',aria:false});
     tl.from(desc.lines,{
         y:50,
         duration,
@@ -31,7 +31,7 @@ export const btn=(ele,duration=0.3)=>{
     })
 }
 export const aboutHeading=(ele,secele)=>{
-    const title=SplitText.create(secele,{type:'words'});
+    const title=SplitText.create(secele,{type:'words',aria:false});
     const timeline=gsap.timeline({
         scrollTrigger:{
             trigger:'.hero',
@@ -109,7 +109,7 @@ export const featureHeading=(ele,parent)=>{
     })
 }
 export const featurepara=(ele,parent)=>{
-      const title=SplitText.create(ele,{type:'words'});
+      const title=SplitText.create(ele,{type:'words',aria:false});
       gsap.from(title.words,{
         scrollTrigger:{
             trigger:parent,
@@ -215,7 +215,7 @@ export const contactTitle=(ele,parent)=>{
     })
 }
 export const contactDesc=(ele,parent)=>{
-    const desc=SplitText.create(ele,{type:'lines'});
+    const desc=SplitText.create(ele,{type:'lines',aria:false});
     gsap.from(desc.lines,{
          scrollTrigger:{
             trigger:parent,
