@@ -89,7 +89,7 @@ const Contact = () => {
             <label htmlFor="message">Message</label>
             <textarea name="Message" id="message" value={formData.message}
             onChange={(e)=>setFormData({...formData,message:e.target.value})} placeholder='Your message...' className='flex w-full h-40 bg-[rgb(26,35,41)] p-3 rounded resize-none outline-none focus:ring-primary focus:ring-1 border-muted border' required ></textarea>
-            <button type="submit" className='flex w-full justify-center h-15 mt-3 overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25' disabled={isLoading} >
+            <button type="submit" className='flex w-full justify-center h-15 mt-3 overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-[rgb(15,20,24)] hover:bg-primary/90 shadow-primary/25' disabled={isLoading} >
               <span className="relative flex items-center justify-center gap-2">
                 {isLoading?(
                   <>
