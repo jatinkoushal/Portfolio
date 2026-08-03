@@ -10,7 +10,7 @@ const Technologies = () => {
         <div className='flex skill' >
         {[...skills,...skills].map((skill,index)=>(
             <div key={index} className='flex-shrink-0 px-8 py-4' >
-                <span className='md:text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors' >{skill}</span>
+                <span className='md:text-xl font-semibold text-muted-foreground hover:text-primary transition-colors' >{skill}</span>
             </div>
         ))}
         </div>
